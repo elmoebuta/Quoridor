@@ -101,6 +101,7 @@ void ganador(char tablero[n][n],bool flag)
 		cout<<"gana tres"<<endl;
 	}
 }
+// Profe expuse e hice el código solo, piedad. José Aldana
 void iatres(int &tx,int &ty,int &tdx,int &tdy,char tres,int tablerop[n][n],char tablero[n][n])
 {
 
@@ -195,7 +196,7 @@ int main()
 	int ux=8;
 	int uy=4;
 	int udx=0;
-	int udy=4;
+	int udy=0;
 	int dx=0;
 	int dy=4;
 	int ddx=0;
@@ -224,7 +225,7 @@ int main()
 			
 			udx=udx+1;
 			creartablero(tablero);
-			tablero[ux-udx][uy]=uno;
+			tablero[ux-udx][uy+udy]=uno;
 			iados(dx,dy,ddx,ddy,dos,tablero);
 			tablero[dx][dy]=dos;
 			
@@ -242,7 +243,7 @@ int main()
 			
 			udx=udx-1;
 			creartablero(tablero);
-			tablero[ux-udx][uy]=uno;
+			tablero[ux-udx][uy+udy]=uno;
 			iados(dx,dy,ddx,ddy,dos,tablero);
 			tablero[dx][dy]=dos;
 			
@@ -259,7 +260,7 @@ int main()
 			
 			udy=udy-1;
 			creartablero(tablero);
-			tablero[ux-udx][uy]=uno;
+			tablero[ux-udx][uy+udy]=uno;
 			iados(dx,dy,ddx,ddy,dos,tablero);
 			tablero[dx][dy]=dos;
 			
@@ -276,7 +277,7 @@ int main()
 			
 			udy=udy+1;
 		    creartablero(tablero);
-			tablero[ux-udx][uy]=uno;
+			tablero[ux-udx][uy+udy]=uno;
 			iados(dx,dy,ddx,ddy,dos,tablero);
 			tablero[dx][dy]=dos;
 			
